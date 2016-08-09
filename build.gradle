@@ -1,0 +1,22 @@
+group 'br.unicamp.mtcontroller'
+version '1.0'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    compile 'org.jfree:jfreechart:1.0.19';
+    compile 'com.google.code.gson:gson:2.6.2';
+    compile 'xerces:xercesImpl:2.11.0';
+    compile 'org.hamcrest:hamcrest-core:1.3';
+    compile 'junit:junit:4.12';
+    compile 'com.fuzzylite:jfuzzylite:5.0';
+    compile files('libs/cst.jar', 'libs/log4j.jar', 'libs/traci4j-1.6.jar', 'libs/traci4j-1.6-sources.jar');
+
+}
